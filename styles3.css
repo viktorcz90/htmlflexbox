@@ -1,0 +1,170 @@
+*{
+
+  /*  max-width:  2280px;
+    height: 900px;*/
+    margin:10px;
+    padding: 10px;
+    box-sizing:border-box;
+
+}
+
+.padre{
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+
+.principal{
+
+    display:flex;
+    flex-flow:column nowrap;
+    background:black;
+   /* height: 340px;
+    padding: 36px;
+    border:10px;
+   
+    margin:20px;*/
+}
+    .menu{
+        background: grey;
+        display: flex;
+        flex-flow:row nowrap;
+        height:100px;
+        align-items:center;
+    }
+
+        .logo{background: greenyellow;
+        flex:1 1 auto;
+        height:30px;}
+        .navcenter{background: greenyellow;
+            flex:5 1 auto;
+            height:30px;
+        }
+        .socialmedia{background:greenyellow;
+            flex:1 1 auto;
+            height:30px;
+        }
+
+
+.backgroundphoto{
+    background: red;
+    
+}
+
+h1{background: blue;}
+
+.section{
+    background: black;
+    display:flex;
+}
+
+    .articulos{
+        background:yellow;
+        flex:2 1 auto;
+        display:flex;
+        flex-flow:row wrap;
+
+    }
+        .article{
+            
+            background:pink;
+            flex: 1 1 40%;
+        }
+        .navegacion{
+            background:blueviolet;
+            flex: 1 1 100%;
+        }
+    .aside{
+        
+        background: chocolate;
+        flex: 1 1 auto;
+    }
+        .publicidad{
+            background: pink;
+        }
+    
+
+.footer{
+    background: black;
+    display:flex;
+    justify-content:center;
+}
+        .pie{
+            
+            background: grey;
+            width: 300px;
+            
+        }
+
+
+    @media all and (max-width:800px){
+        .section{
+        background:orange;
+        flex-direction:column;
+        }
+    
+         .menu{
+        flex-direction:column;
+        height:auto;
+    }
+    
+    .aside{
+         display:flex;
+        justify-content:center;
+    }
+ }
+
+ @media all and(max-width:600px){
+    .articulos{
+        flex-direction:column;
+    }
+}
+@media all and (max-width:400px){
+    .aside{
+        flex-direction:column;
+    }
+}
+/*.principal{
+    
+    background-color: brown;
+    height: 116px;
+    display:flex;
+    
+
+
+}
+
+.backgroundphoto{
+
+    background-color:purple;
+    height: 116px;
+    margin: 600px;
+    
+    justify-content: center;
+
+}
+
+.logo{
+    height:40px;
+    width: 320px;
+    margin:40px;
+background-color: seagreen;
+}
+
+.navcenter{
+    width: 1420px;
+    height:40px;
+   
+    margin:40px;
+    background-color: seagreen;
+
+}
+
+.socialmedia{
+    width: 320px;
+    height: 40px;
+    margin: 4px;
+    background-color: seagreen;
+}
+
+*/

@@ -1,0 +1,256 @@
+
+        *{
+        box-sizing:border-box;
+        }
+
+        a{text-decoration: none;
+        font-family: "Montserrat",sans-serif;
+        }
+
+        .padre{
+        display:flex;
+        flex-flow:column nowrap;
+        }
+        .margen-interno{
+        padding: 0 80px;
+        }
+
+        .principal{
+        display:flex;
+        flex-flow:column nowrap;
+        margin: 10px 80px 10px 80px;
+        background:url(./imagenes/Activitat\ Flex\ -\ Nivell\ 2\ -\ fons\ capçalera.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        }
+
+        .menu{
+        
+        display: flex;
+        flex-flow:row nowrap;
+        height:120px;
+        align-items:center;
+        }   
+
+        .logo{
+            
+        background:url(./imagenes/logo.png);
+    
+        background-position:center;
+        background-attachment: contain;
+        background-size: cover;
+        height:50px;
+        width: 50px;
+  
+        }
+
+        .logo:hover {color:white;}
+
+        .navcenter{
+        margin-left: 40px;
+        flex:1 1px ;
+        padding-left: 10px;
+            
+        }
+
+        .navcenter a { 
+        color:rgb(134, 132, 132);
+        font-size: 12px;
+        padding: 0px 20px;
+        letter-spacing: 1px;
+    
+        }
+        .navcenter a:hover {
+        color: rgb(141, 5, 12);
+        }
+        
+        .socialmedia{
+        flex:1 1auto;
+        display: flex;
+            
+        }
+
+        .socialmedia a{
+        color:grey;
+        font-size: 18px;
+        padding: 0 10px;
+            
+        }
+
+        .socialmedia a:hover{
+        color:blue;
+        }
+
+        .backgroundphoto{
+        background:rgba(0,0,0,.1);
+        margin-top: 20px;
+        height: 100px;
+        background-position: center;
+        text-align: center;
+        }
+
+        h1{ 
+        margin-top: 40px;
+        color:rgba(197, 17, 107, 0.411);
+        }
+
+        .section{
+    
+        display:flex;
+        }
+        .articulos{
+        background:grey;
+        flex:1 1 auto;
+        display:flex;
+        flex-flow:row wrap;
+
+        }
+        .article{
+            
+           font-size:13px;
+            background-position:center;
+           margin: 10px 10px 10px 10px;
+           flex:1 1 30%;
+           font-family: "Montserrat",sans-serif;
+        }
+        .article img{
+            width:100%;
+            height: 200px;
+        }
+
+        .article2{
+            margin: 40px 10px 0px 10px;
+            background-position:center;
+            flex:1 1 40%;
+            font-family: "Montserrat",sans-serif;
+
+        }
+        .article2 img{
+            width:100%;
+            height:50%;
+        }
+
+        h2{
+           
+            color:white;
+            font-size:13px;
+            margin-top:-20px;
+            margin-left:10px;
+        }
+
+        h3{
+            background: rgb(249, 76, 71);
+            color :white;
+            flex:1 1 40%;
+            text-transform: uppercase;
+            padding:20px 10px 0 10px;
+            margin-top:-15px;
+          
+            
+        }
+        h4{ font-weight: 100;
+            margin-left:20px;
+            font-size: 14px;
+            color: white;
+        }
+
+        h5{
+            color:black;
+            margin-left:20px;
+            
+        }
+
+        .pastilla{
+            background: rgb(249, 76, 71);
+            color :white;
+            flex:1 1 30%;
+            padding:10px 5px 5px 5px;
+            margin-top:-5px;
+        }
+
+        .texto1{
+           
+            color: white;
+            font-size: 12px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .leermas{
+            color:black;
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 12px;
+            font-weight:700;
+            
+        }
+            
+        .navegacion{
+            background:blueviolet;
+            flex: 1 1 100%;
+        }
+        
+       
+        .footer{
+        background: black;
+        display:flex;
+        justify-content:center;
+        }
+
+        .pie{
+            
+            background: grey;
+            width: 300px;
+            
+        }
+
+        @media all and (max-width:980px){
+        .section{
+       
+        flex-direction:row;
+        }
+    
+         .menu{
+        flex-direction:column;
+        height:auto;
+        }
+    
+        .aside{
+         display:flex;
+        justify-content:center;
+         }
+        
+         h1{ 
+        font-size:12px;
+        margin-top: 20px;
+        }
+  
+
+        @media all and(max-width:600px){
+        .articulos{
+                flex-direction:column;
+                }
+                h1{ 
+                font-size:14px;
+                margin-top:-30px;
+                }
+        }
+
+
+        @media all and (max-width:320px){
+        .aside{
+        flex-direction:column;
+        
+        }
+       
+
+        .backgroundphoto{
+            height: 50px;
+        }
+
+        h1{ 
+            font-size:12px;
+            margin-top: 10px;}
+        }
+    }

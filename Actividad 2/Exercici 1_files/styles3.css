@@ -1,0 +1,252 @@
+*{
+
+  /*  max-width:  2280px;
+    height: 900px;*/
+    margin:0px;
+    padding: 0px;
+    box-sizing:border-box;
+
+}
+
+a{text-decoration: none;
+font-family: "Montserrat",sans-serif;
+}
+
+.padre{
+    display:flex;
+    flex-flow:column nowrap;
+}
+.margen-interno{
+    padding: 0 50px;
+}
+
+.principal{
+
+    display:flex;
+    flex-flow:column nowrap;
+    margin: 10px 50px 10px 50px;
+    
+    background:url(./imagenes/Activitat\ Flex\ -\ Nivell\ 2\ -\ fons\ capçalera.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    height:280px;
+ 
+   /* height: 340px;
+    padding: 36px;
+    border:10px;
+   
+    margin:20px;*/
+}
+    .menu{
+        
+        
+        display: flex;
+        flex-flow:row nowrap;
+        height:120px;
+        align-items:center;
+    }
+
+        .logo{
+            
+        background:url(./imagenes/logo.png);
+    
+      background-position:center;
+      background-attachment: contain;
+        background-size: cover;
+        height:50px;
+        width: 50px;
+  
+        
+    }
+
+        .logo:hover {color:white;}
+
+        .navcenter{
+            margin-left: 40px;
+            flex:5 20px ;
+            
+        }
+
+        .navcenter a { color:rgb(134, 132, 132);
+            font-size: 12px;
+        padding: 0px 15px;
+    letter-spacing: 0,8px;
+}
+        .navcenter a:hover {
+            color: rgb(141, 5, 12);
+        }
+        
+        .socialmedia{
+            flex:1 1auto;
+            display: flex;
+            
+        }
+
+        .socialmedia a{
+            color:grey;
+            font-size: 18px;
+            padding: 0 5px;
+            
+        }
+
+        .socialmedia a:hover{
+            color:blue;
+        }
+
+.backgroundphoto{
+    background:rgba(0,0,0,.1);
+    margin-top: 20px;
+    height: 100px;
+    background-position: center;
+    text-align: center;
+}
+
+h1{ 
+    margin-top: 40px;
+    color:rgba(197, 17, 107, 0.815);
+
+
+}
+
+.section{
+    background: white;
+    display:flex;
+}
+
+    .articulos{
+        background:grey;
+        flex:1 1 auto;
+        display:flex;
+        flex-flow:row wrap;
+
+    }
+        .article{
+            
+           font-size:13px;
+            background-position:center;
+           margin: 10px 10px 10px 10px;
+           flex:1 1 45%;
+        }
+        h2{
+            color:white;
+            font-size:13px;
+            padding:10px 0;
+            margin-top:-80px;
+        }
+
+        h3{
+            background: plum;
+            text-transform: uppercase;
+            padding:0px 10px 0px 20px ;
+
+        }
+         
+        .article img{
+                width:100%;
+             height: 100%;
+            }
+
+            .article2{
+                margin: 40px 10px 10px 10px;
+                background-position:center;
+               
+               flex:5 1 100%;
+            }
+            .article2 img{
+               
+                width:100%;
+                margin-bottom:30px;
+            }
+        
+        .navegacion{
+            background:blueviolet;
+            flex: 1 1 100%;
+        }
+  
+    
+
+.footer{
+    background: black;
+    display:flex;
+    justify-content:center;
+}
+        .pie{
+            
+            background: grey;
+            width: 300px;
+            
+        }
+
+
+    @media all and (max-width:800px){
+        .section{
+        background:orange;
+        flex-direction:column;
+        }
+    
+         .menu{
+        flex-direction:column;
+        height:auto;
+    }
+    
+    .aside{
+         display:flex;
+        justify-content:center;
+    }
+ }
+
+ @media all and(max-width:600px){
+    .articulos{
+        flex-direction:column;
+    }
+}
+@media all and (max-width:400px){
+    .aside{
+        flex-direction:column;
+    }
+}
+/*.principal{
+    
+    background-color: brown;
+    height: 116px;
+    display:flex;
+    
+
+
+}
+
+.backgroundphoto{
+
+    background-color:purple;
+    height: 116px;
+    margin: 600px;
+    
+    justify-content: center;
+
+}
+
+.logo{
+    height:40px;
+    width: 320px;
+    margin:40px;
+background-color: seagreen;
+}
+
+.navcenter{
+    width: 1420px;
+    height:40px;
+   
+    margin:40px;
+    background-color: seagreen;
+
+}
+
+.socialmedia{
+    width: 320px;
+    height: 40px;
+    margin: 4px;
+    background-color: seagreen;
+}
+
+*/
